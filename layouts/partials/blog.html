@@ -13,7 +13,7 @@
             </div>
             {{"<!-- /section title -->" | safeHTML}}
 
-            {{ range first 3 .Site.RegularPages }}
+            {{ range first 4 .Site.RegularPages }}
             {{"<!-- single blog post -->" | safeHTML}}
             <article class="col-lg-4 col-md-6 col-12 clearfix wow fadeInUp" data-wow-duration="500ms">
                 <div class="post-block">
@@ -31,9 +31,6 @@
             {{"<!-- /single blog post -->" | safeHTML}}
             {{ end }}
 
-            <div class="all-post text-center col-lg-12">
-                <a class="btn btn-main" href="{{ if .Site.GetPage "/blog" }}/blog{{ else }}/posts{{end}}">{{ i18n "viewAllPost" }}</a>
-            </div>
         </div>
     </div>
 </section>
